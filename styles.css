@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Asap:400,500,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #292c34;
+  font-family: Asap, sans-serif;
+}
+
+header {
+  background: white;
+  padding: 20px;
+}
+
+header h1 {
+  color: #292c34;
+  text-align: center;
+  font-family: Asap, sans-serif;
+}
+
+.score-board {
+  border: 3px solid white;
+  border-radius: 4px;
+  width: 200px;
+  margin: 20px auto;
+  color: white;
+  font-size: 46px;
+  text-align: center;
+  padding: 15px 20px;
+  font-family: Asap, sans-serif;
+  position: relative;
+}
+
+.badge {
+  background: #e2584d;
+  font-size: 14px;
+  padding: 2px 10px;
+  font-family: Asap, sans-serif;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -27px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -42px;
+}
+
+.result {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+.choices {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.choice {
+  border: 3px solid white;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.choice img {
+  height: 200px;
+}
+
+.choice:hover {
+  background: gray;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#action-message {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+/* Adding glows and different color borders in case of win, lose and draw */
+.green-glow {
+  border: 3px solid green;
+  box-shadow: 0 0 20px green;
+}
+.red-glow {
+  border: 3px solid red;
+  box-shadow: 0 0 20px red;
+}
+.gray-glow {
+  border: 3px solid gray;
+  box-shadow: 0 0 20px gray;
+}
